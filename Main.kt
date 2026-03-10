@@ -1,15 +1,14 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    var name : String = ""
-    var nickname: String?=null
-    var age: Int=0
+    val score=readln().toInt()
+    when (score) {
+        in 90..100 ->println("A")
+        in 80 .. 89 ->println("B")
+        in 70 .. 79 ->println("C")
+        else -> println("F")
 
-    if(nickname==null)
-    {
-        println("nickname error")
     }
-    if (age < 15) println("Child")
-    else if ( age < 18) println("Teen")
-    else println("Adult")
 }
 
 
